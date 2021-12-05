@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+}
+/* ------------------------nav bar---------------------------------------- */
+nav {
+  background-color: #333;
+  position: sticky;
+  width: 100%;
+  height: 88px;
+  z-index: 1;
+  top: 0px;
+}
+
+.logo {
+  display: inline-block;
+  left: -2px;
+  top: 7px;
+  position: absolute;
+}
+.logo img {
+  height: 117px;
+}
+.mid {
+  display: inline-block;
+  margin: 14px;
+  margin-left: 100px;
+}
+.navbar {
+  display: inline-block;
+}
+.navbar li {
+  display: inline-block;
+  font-size: 25px;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+.navbar li a:hover {
+  color: #fe7f27;
+}
+
+.right {
+  display: inline-block;
+  margin: 27px;
+  right: 6px;
+  position: absolute;
+}
+
+.btn {
+  color: white;
+  opacity: 0.89;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 6px;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+/* --------------------section 1--------------------------------- */
+.sec1 {
+  background-image: url("11.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(51, 51, 51, 0.8);
+  height: 100vh;
+}
+.sec1_div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.quote {
+  font-weight: bolder;
+  padding-top: 85px;
+}
+
+.quote p {
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(25) infinite alternate,
+    blink 800ms steps(25) infinite normal;
+  border-right: 5px solid white;
+}
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 102%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+#register {
+  font-size: 24px;
+  padding: 15px;
+  background-color: #eb1c24;
+  color: white;
+  font-weight: bold;
+  font-family: cursive;
+  cursor: pointer;
+  border: 2px solid #eb1c24;
+  border-radius: 28px 0 28px 0;
+  opacity: 1;
+  padding-top: 10px;
+  margin-top: 40px;
+}
+
+#register:hover {
+  background-color: white;
+  color: #eb1c24;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(20, 20, 20, 0.89);
+  color: black;
+}
+
+.form-container {
+  max-width: 320px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 56px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 296px;
+  padding: 11px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+/* -----------------------section 2------------------------------- */
+.sec2 {
+  color: black;
+  padding: 40px;
+  text-align: center;
+  height: 200px;
+}
+
+/* -----------------------section 3---------------------------------- */
+.sec3 {
+  background-image: url("33.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+  position: relative;
+}
+
+.sec3_div {
+  margin: 0;
+  right: 40px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: end;
+}
+
+#nutrition {
+  color: black;
+  text-align: end;
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+#chat {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #25d366;
+  padding: 16px;
+  border: 2px solid #25d366;
+  border-radius: 28px 0;
+  cursor: pointer;
+}
+#chat:hover {
+  border: 2px solid #25d366;
+  color: #25d366;
+  background-color: white;
+}
+
+/* -------------------------footer---------------------------- */
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+  text-align: center;
+}
