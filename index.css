@@ -198,7 +198,7 @@ nav {
   color: black;
   padding: 40px;
   text-align: center;
-  height: 200px;
+  min-height: 200px;
 }
 
 /* -----------------------section 3---------------------------------- */
