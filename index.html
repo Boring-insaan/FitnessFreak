@@ -4,7 +4,7 @@
     <title>
         FitnessFreak
     </title>
-    <link rel="icon" sizes="192x192" href="icon.png" type="image/icon type">
+    <link rel="icon" sizes="192x192" href="./images/icon.png" type="image/icon type">
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -12,7 +12,7 @@
 
     <nav>
         <div class="logo">
-            <img src="22.png" alt="logo">
+            <img src="./images/22.png" alt="logo">
         </div>
 
         <div class="mid">
@@ -52,7 +52,7 @@
         </div>
         <div class="form-popup" id="myForm">
             <div class="logo">
-                <img src="22.png" alt="logo">
+                <img src="./images/22.png" alt="logo">
             </div>
             <form class="form-container">
                 <h1>Register</h1>
@@ -70,11 +70,32 @@
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
-        <script src="index_js.js"></script>
+        
     </div>
 
     <div class="sec2">
-      BMI calc here...
+      <h1 class="calculator-heading">BMI Calculator</h1>
+      <div class="calculator_wrapper">
+        <div class="height">
+            <span>Height: </span>
+            <input class="input-box heightValue">
+        </div>
+        <div class="weight">
+            <span>Weight: </span>
+            <input class="input-box weightValue">
+        </div>
+        <div class="bmi-result-box">
+            <i class="bmi-result"></i> 
+        </div>
+        <div>
+            <button class="calculate-button">
+                Calculate
+            </button>
+        </div>
+        <div class="note">
+            <i>Enter height is [cm] and weight [kg]</i>
+        </div>
+      </div>
     </div>
 
     <div class="sec3">
@@ -90,6 +111,6 @@
     </footer>
 
 
-
+    <script src="index.js"></script>
 </body>
 </html>
