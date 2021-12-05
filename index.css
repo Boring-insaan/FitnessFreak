@@ -70,7 +70,9 @@ nav {
   background-image: url("11.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   min-height: 100%;
+  position: relative;
 }
 
 .container {
@@ -208,6 +210,7 @@ nav {
   background-attachment: fixed;
   min-height: 500px;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .sec3_div {
