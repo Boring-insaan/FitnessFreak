@@ -21,7 +21,7 @@ const calculateBMI = () => {
     bmiResult.innerHTML = "Enter Weight Correctly";
     heightInput.value = "";
     weightInput.value = "";
-  }else if(height>1.7  || height<=0){
+  }else if(height>1.95  || height<=0){
     bmiResult.innerHTML = "Enter Height Correctly";
     heightInput.value = "";
     weightInput.value = "";

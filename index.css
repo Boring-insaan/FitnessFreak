@@ -203,6 +203,7 @@ nav {
   min-height: 200px;
   width: 30%;
   margin: auto;
+  min-width: 350px;
 }
 .calculator-heading{
   color: #eb1c24;
@@ -224,28 +225,35 @@ nav {
   border: none;
   border-bottom: 1px solid;
   outline: none;
-  transition: 0.5s ease-in;
+  transition: 0.4s ease-in;
   background: transparent;
   font-size:20px;
   width: 60%;
+
+}
+.input-box::placeholder{
+  color: #555;
+  font-size: 15px;
+  padding-left: 4px;
 }
 
 .input-box:focus{
   border-bottom: 1px solid white;
 }
 .calculate-button{
-  border: none;
-  background-color: red;
+  border: 2px solid #eb1c24;
+  background-color: #eb1c24;
   color: white;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 15px;
+  border-radius: 28px 0px;
   cursor: pointer;
   font-size: 20px;
   transition: 0.3s ease-in;
+  font-weight: bolder;
 }
 .calculate-button:hover{
-  color: black;
-  background-color: #fe7f27;
+  color: #eb1c24;
+  background-color: white;
 }
 .bmi-result{
   color: white;
