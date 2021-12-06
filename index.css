@@ -128,15 +128,14 @@ nav {
   font-family: cursive;
   cursor: pointer;
   border: 2px solid white;
-  outline: 3px solid #eb1c24;
   border-radius: 28px 0 28px 0;
-  opacity: 1;
   padding-top: 10px;
   margin-top: 40px;
   animation: glowing 1300ms infinite;
 }
 
 #register:hover {
+  border: 2px solid #eb1c24;
   background-color: white;
   color: #eb1c24;
   animation: none;
@@ -266,7 +265,6 @@ nav {
 }
 .calculate-button{
   border: 2px solid white;
-  outline: 3px solid #eb1c24;
   background-color: #eb1c24;
   color: white;
   padding: 15px;
@@ -279,6 +277,7 @@ nav {
 .calculate-button:hover{
   color: #eb1c24;
   background-color: white;
+  border: 2px solid #eb1c24;
 }
 .bmi-result{
   color: white;
@@ -288,7 +287,7 @@ nav {
   background-image: url("./images/33.jpg");
   background-size: cover;
   background-attachment: fixed;
-  min-height: 500px;
+  min-height: 50vh;
   position: relative;
   background-repeat: no-repeat;
 }
