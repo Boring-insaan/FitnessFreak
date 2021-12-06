@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>
         FitnessFreak
@@ -27,8 +28,8 @@
             </ul>
         </div>
         <div class="right">
-            <button class="btn" style="background-color:#fe7f27;">Sign In</button>
-            <button class="btn" style="background-color:#eb1c24">Sign Up</button>
+            <button class="btn open-button" onclick="openLoginForm()" style="background-color:#fe7f27;">Log In</button>
+            <button class="btn open-button" onclick="openForm()" style="background-color:#eb1c24">Register</button>
         </div>
     </nav>
     <div class="sec1">
@@ -66,39 +67,61 @@
                 <label for="cpsw"><b>Confirm password</b></label>
                 <input type="password" placeholder="Re-enter Password" name="cpsw" required>
 
+                <div id="error"></div>
+
                 <button type="submit" class="btn">Register</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
-        
+
+        <div class="form-popup" id="LoginForm">
+            <div class="logo">
+                <img src="./images/22.png" alt="logo">
+            </div>
+            <form class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <div id="error"></div>
+
+                <button type="submit" class="btn">Log In</button>
+                <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+            </form>
+        </div>
+
     </div>
 
     <div class="sec2">
         <div class="calc-container">
-      <h1 class="calculator-heading">BMI Calculator</h1>
-      <div class="calculator_wrapper">
-        <div class="height">
-            <label data-domain="cm"> Height: 
-            <input class="input-box heightValue" placeholder=" in cms">
-            </label>
+            <h1 class="calculator-heading">BMI Calculator</h1>
+            <div class="calculator_wrapper">
+                <div class="height">
+                    <label data-domain="cm"> Height:
+                        <input class="input-box heightValue" placeholder=" in cms">
+                    </label>
+                </div>
+                <div class="weight">
+                    <label> Weight:
+                        <input class="input-box weightValue" placeholder="in kgs">
+                    </label>
+                </div>
+                <div class="bmi-result-box">
+                    <i class="bmi-result">&nbsp;</i>
+                </div>
+                <div>
+                    <button class="calculate-button">
+                        Calculate
+                    </button>
+                </div>
+
+            </div>
         </div>
-        <div class="weight">
-            <label> Weight: 
-            <input class="input-box weightValue" placeholder="in kgs">
-        </label>
-        </div>
-        <div class="bmi-result-box">
-            <i class="bmi-result"></i> 
-        </div>
-        <div>
-            <button class="calculate-button">
-                Calculate
-            </button>
-        </div>
-    
-      </div>
     </div>
-</div>
     <div class="sec3">
         <div class="sec3_div">
             <p id="nutrition">
@@ -108,10 +131,14 @@
         </div>
     </div>
     <footer>
-        <p style="padding-top: 10px;">Proudly made with &#x2764; by : <b><i> Tushar, Rashita and Chitresh Malhan </i></b></p>
+        Proudly made with &#x2764; by :
+        <div class="tooltip">Tushar,<span class="tooltiptext">101903670</span></div>
+        <div class="tooltip">&nbsp;Rashita<span class="tooltiptext">101903710</span></div>&nbsp;and&nbsp;
+        <div class="tooltip">Chitresh Malhan.<span class="tooltiptext">101903662</span></div>
     </footer>
 
 
     <script src="index.js"></script>
 </body>
+
 </html>
