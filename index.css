@@ -73,7 +73,6 @@ nav {
   background-repeat: no-repeat;
   min-height: 100%;
   position: relative;
-  top: -88px;
 }
 
 .container {
@@ -84,7 +83,7 @@ nav {
 .sec1_div {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -121,23 +120,41 @@ nav {
 }
 
 #register {
-  font-size: 24px;
+  font-size: 27px;
   padding: 15px;
   background-color: #eb1c24;
   color: white;
   font-weight: bold;
   font-family: cursive;
   cursor: pointer;
-  border: 2px solid #eb1c24;
+  border: 2px solid white;
+  outline: 3px solid #eb1c24;
   border-radius: 28px 0 28px 0;
   opacity: 1;
   padding-top: 10px;
   margin-top: 40px;
+  animation: glowing 1300ms infinite;
 }
 
 #register:hover {
   background-color: white;
   color: #eb1c24;
+  animation: none;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #eb1c24;
+    box-shadow: 0 0 5px #fe7f27;
+  }
+  50% {
+    background-color: #eb1c23b0;
+    box-shadow: 0 0 20px #fe7f27
+  }
+  100% {
+    background-color: #eb1c24;
+    box-shadow: 0 0 5px #fe7f27;
+  }
 }
 
 .form-popup {
@@ -155,10 +172,15 @@ nav {
 .form-container {
   max-width: 320px;
   padding: 20px;
-  margin: auto;
-  margin-top: 56px;
   background-color: white;
   border-radius: 5px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
 }
 
 .form-container input[type="text"],
@@ -199,13 +221,14 @@ nav {
 /* -----------------------section 2------------------------------- */
 .sec2 {
   color: black;
-  padding: 40px;
+  padding: 0px 40px 40px 40px;
   text-align: center;
   min-height: 200px;
   width: 30%;
   margin: auto;
   min-width: 350px;
 }
+
 .calculator-heading{
   color: #eb1c24;
 }
@@ -242,7 +265,8 @@ nav {
   border-bottom: 1px solid white;
 }
 .calculate-button{
-  border: 2px solid #eb1c24;
+  border: 2px solid white;
+  outline: 3px solid #eb1c24;
   background-color: #eb1c24;
   color: white;
   padding: 15px;
