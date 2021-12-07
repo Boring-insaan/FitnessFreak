@@ -141,6 +141,7 @@ nav {
 .sec1_div {
   margin: 0;
   position: absolute;
+  overflow: hidden;
   top: 35%;
   width: 100%;
   left: 50%;
@@ -163,10 +164,10 @@ nav {
 }
 @keyframes typewriter {
   from {
-    width: 0%;
+    width: 0px;
   }
   to {
-    width: 38%;
+    width: 463px;
   }
 }
 @keyframes blink {
