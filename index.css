@@ -9,9 +9,12 @@ nav {
   background-color: #333;
   position: sticky;
   width: 100%;
-  height: 88px;
   z-index: 1;
   top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
 }
 
 .logo {
@@ -23,22 +26,23 @@ nav {
 .logo img {
   height: 117px;
 }
-.mid {
-  display: inline-block;
-  margin: 14px;
-  margin-left: 100px;
-}
 .navbar {
-  display: inline-block;
+  margin-left: 160px;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 .navbar li {
-  display: inline-block;
+  list-style: none;
   font-size: 25px;
 }
 .navbar li a {
   color: white;
   text-decoration: none;
   padding: 20px;
+  display: block;
 }
 .navbar li a:hover {
   color: #fe7f27;
@@ -59,10 +63,64 @@ nav {
   cursor: pointer;
   font-family: inherit;
   padding: 6px;
+  width: 70px;
 }
 
 .btn:hover {
   background-color: white;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.75rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3rem;
+  height: 30px;
+}
+
+.toggle-button .bar {
+  height: 6px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+@media (max-width: 1150px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar {
+    display: none;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .right {
+    margin-right: 6rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+  .navbar li {
+    text-align: center;
+    border: 1px solid #222;
+  }
+  .navbar li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar.active {
+    display: flex;
+    margin-top: 88px;
+    opacity: 0.89;
+  }
 }
 
 /* --------------------section 1--------------------------------- */
@@ -84,6 +142,7 @@ nav {
   margin: 0;
   position: absolute;
   top: 35%;
+  width: 100%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -147,7 +206,7 @@ nav {
     box-shadow: 0 0 5px #fe7f27;
   }
   50% {
-    background-color: rgb(110, 109, 109);
+    background-color: rgba(156, 154, 154, 0.575);
     box-shadow: 0 0 20px #fe7f27;
   }
   100% {
@@ -225,10 +284,10 @@ nav {
 /* -----------------------section 2------------------------------- */
 .sec2 {
   color: black;
-  padding: 0px 40px 40px 40px;
+  padding: 0px 0px 40px 0px;
   text-align: center;
   min-height: 200px;
-  width: 30%;
+  max-width: 30%;
   margin: auto;
   min-width: 350px;
 }
